@@ -120,7 +120,9 @@ func (c *Channel) sendMsg(msg *Message) {
 }
 
 func (c *Channel) Close() {
-	c.closed = true
-	c.conn.Close()
-	c.quitChannel <- 1
+	if !c.closed {
+		c.closed = true
+		c.conn.Close()
+		c.quitChannel <- 1
+	}
 }
