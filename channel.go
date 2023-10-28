@@ -10,6 +10,7 @@ type Channel struct {
 	errCb        ErrorCallback
 	closed       bool
 	conn         net.Conn
+	reqContainer *RequestContainer
 	errorChannel chan error
 	readChannel  chan *Message
 	writeChannel chan *Message
@@ -22,6 +23,7 @@ func CreateChannel(Conn net.Conn, MsgCb MsgCallback, ErrCb ErrorCallback) *Chann
 		errCb:        ErrCb,
 		closed:       false,
 		conn:         Conn,
+		reqContainer: CreateRequestContainer(),
 		errorChannel: make(chan error, 2),
 		readChannel:  make(chan *Message, 128),
 		writeChannel: make(chan *Message, 128),
@@ -38,7 +40,9 @@ outLoop:
 	for {
 		select {
 		case msg := <-c.readChannel:
-			c.msgCb(msg)
+			if !c.reqContainer.FilterMessage(msg) {
+				c.msgCb(msg)
+			}
 		case err := <-c.errorChannel:
 			c.errCb(err)
 			break outLoop
