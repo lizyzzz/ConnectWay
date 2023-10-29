@@ -1,6 +1,10 @@
 package ConnectWay
 
-import "net"
+import (
+	"net"
+
+	log "github.com/cihub/seelog"
+)
 
 type MsgCallback func(msg *Message)
 type ErrorCallback func(err error)
@@ -48,6 +52,7 @@ outLoop:
 			break outLoop
 		}
 	}
+	log.Info("quiting message channel...")
 	c.Close()
 }
 
@@ -78,7 +83,7 @@ func (c *Channel) sendingLoop() {
 				byteLeft -= uint32(n)
 			}
 		case <-c.quitChannel:
-			// TODO: add log
+			log.Info("quiting sending loop...")
 			return
 		}
 	}
@@ -93,6 +98,7 @@ func (c *Channel) readingLoop() {
 			n, err := c.conn.Read(msg.header[headerRead:])
 			if err != nil {
 				c.errorChannel <- err
+				log.Info("quiting reading loop...")
 				return
 			}
 			headerRead += n
@@ -106,6 +112,7 @@ func (c *Channel) readingLoop() {
 			n, err := c.conn.Read(msg.payload[totalRead:])
 			if err != nil {
 				c.errorChannel <- err
+				log.Info("quiting reading loop...")
 				return
 			}
 			totalRead += uint32(n)

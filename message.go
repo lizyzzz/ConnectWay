@@ -14,7 +14,7 @@ type Message struct {
 	payload []byte
 }
 
-func CreateMessage(msgType uint32, msgLength uint32, seq uint32, msg []uint8) *Message {
+func CreateMessage(msgType uint32, msgLength uint32, seq uint32, msg []byte) *Message {
 	result := &Message{}
 	// 组织头部
 	result.header[0] = 0x55

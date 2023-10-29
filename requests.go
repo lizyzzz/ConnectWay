@@ -26,10 +26,10 @@ func generateSeq() uint32 {
 	return seqCount
 }
 
-func CreateRequest(RespType uint32, RespCb RespCallback) *Request {
+func CreateRequest(ReqType uint32, RespCb RespCallback) *Request {
 	result := &Request{
 		seq:      generateSeq(),
-		respType: RespType,
+		respType: ReqType + 1, // respType == ReqType + 1
 		respCb:   RespCb,
 	}
 	return result
