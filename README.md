@@ -6,3 +6,6 @@
 ```shell
   go get -u github.com/lizyzzz/ConnectWay
 ```
+
+## 架构说明
+
