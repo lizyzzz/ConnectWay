@@ -39,6 +39,7 @@ func (c *Client) start(isAsync bool) {
 		conn, err := net.Dial("tcp", c.serverAddr)
 		if err != nil {
 			log.Errorf("connect %s failed, err: %s", c.serverAddr, err.Error())
+			log.Warnf("reconnect %s in 5 seconds", c.serverAddr)
 		} else {
 			c.msgChannel = CreateChannel(conn, c.OnChannelMsg, c.OnChannelError)
 			c.connectedCb(c)
@@ -49,12 +50,12 @@ func (c *Client) start(isAsync bool) {
 			c.closed = false
 			log.Infof("connect %s successed", c.serverAddr)
 			c.msgChannel.start()
+			// reconnect
+			if c.closed {
+				return
+			}
+			log.Warnf("Disconnect %s, reconnect in 5 seconds", c.serverAddr)
 		}
-		// reconnect
-		if c.closed {
-			return
-		}
-		log.Warnf("Disconnect %s, reconnect in 5 seconds", c.serverAddr)
 		time.Sleep(5 * time.Second)
 	}
 }
