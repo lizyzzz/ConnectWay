@@ -66,6 +66,7 @@ func (c *Channel) sendingLoop() {
 				n, err := c.conn.Write(msg.header[headerSend:])
 				if err != nil {
 					c.errorChannel <- err
+					log.Info("quiting sending loop...")
 					return
 				}
 				headerSend += n
@@ -78,6 +79,7 @@ func (c *Channel) sendingLoop() {
 				n, err := c.conn.Write(msg.payload[byteTotal-byteLeft:])
 				if err != nil {
 					c.errorChannel <- err
+					log.Info("quiting sending loop...")
 					return
 				}
 				byteLeft -= uint32(n)
@@ -123,7 +125,9 @@ func (c *Channel) readingLoop() {
 }
 
 func (c *Channel) sendMsg(msg *Message) {
-	c.writeChannel <- msg
+	if !c.closed {
+		c.writeChannel <- msg
+	}
 }
 
 func (c *Channel) Close() {

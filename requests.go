@@ -71,7 +71,6 @@ func (rc *RequestContainer) timeoutCallback(respType uint32) {
 		rc.lock.Lock()
 		delete(rc.requests, respType)
 		rc.lock.Unlock()
-		// TODO: add log
 		err := fmt.Errorf("request: %d timeout", respType)
 		req.respCb(nil, err)
 	}
