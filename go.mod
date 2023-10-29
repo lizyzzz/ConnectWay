@@ -1,4 +1,4 @@
-module ConnectWay
+module github.com/lizyzzz/ConnectWay
 
 go 1.20
 
