@@ -22,19 +22,21 @@ func init() {
 	log.ReplaceLogger(logger)
 }
 
-type ConnectedCallback func(remote string)
+type ConnectedCallback func(c *Client)
+type ClientMsgCallback func(m *Message, c *Client)
+type ClientErrCallback func(err error, c *Client)
 
 type Client struct {
 	connectedCb ConnectedCallback
-	msgCb       MsgCallback
-	errCb       ErrorCallback
+	msgCb       ClientMsgCallback
+	errCb       ClientErrCallback
 	msgChannel  *Channel
 	closed      bool
 	serverAddr  string
 	syncChan    chan int32
 }
 
-func CreateClient(ConnCb ConnectedCallback, MsgCb MsgCallback, ErrCb ErrorCallback) *Client {
+func CreateClient(ConnCb ConnectedCallback, MsgCb ClientMsgCallback, ErrCb ClientErrCallback) *Client {
 	return &Client{
 		connectedCb: ConnCb,
 		msgCb:       MsgCb,
@@ -53,8 +55,8 @@ func (c *Client) start(isAsync bool) {
 			log.Errorf("connect %s failed, err: %s", c.serverAddr, err.Error())
 			return
 		}
-		c.msgChannel = CreateChannel(conn, c.msgCb, c.errCb)
-		c.connectedCb(c.serverAddr)
+		c.msgChannel = CreateChannel(conn, c.OnChannelMsg, c.OnChannelError)
+		c.connectedCb(c)
 		if !isAsync && c.closed {
 			// avoid reconnect would send again
 			c.syncChan <- 1
@@ -117,9 +119,10 @@ func (c *Client) Reply(ReplyType uint32, msgLength uint32, seq uint32, msg []byt
 }
 
 func (c *Client) OnChannelMsg(msg *Message) {
-	c.msgCb(msg)
+	c.msgCb(msg, c)
 }
 
 func (c *Client) OnChannelError(err error) {
-	c.errCb(err)
+	log.Errorf("on channel error: %v", err)
+	c.errCb(err, c)
 }
