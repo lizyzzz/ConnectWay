@@ -1,0 +1,74 @@
+[2023-10-29/20:40:41.919:ERROR:client.go(42)] connect localhost:50051 failed, err: dial tcp 127.0.0.1:50051: connect: connection refused
+[2023-10-29/20:40:41.920:WARN:client.go(42)] reconnect localhost:50051 in 5 seconds
+[2023-10-29/20:40:46.920:INFO:client.go(37)] connected success, local: 127.0.0.1:50594, remote: 127.0.0.1:50051
+[2023-10-29/20:40:46.921:INFO:client.go(52)] connect localhost:50051 successed
+[2023-10-29/20:40:46.921:INFO:client.go(41)] recv message: type: 101, payload: hi num: 0
+[2023-10-29/20:40:47.921:INFO:client.go(41)] recv message: type: 101, payload: hi num: -1
+[2023-10-29/20:40:48.922:INFO:client.go(41)] recv message: type: 101, payload: hi num: -2
+[2023-10-29/20:40:49.923:INFO:client.go(41)] recv message: type: 101, payload: hi num: -3
+[2023-10-29/20:40:50.923:INFO:client.go(41)] recv message: type: 101, payload: hi num: -4
+[2023-10-29/20:40:51.924:INFO:client.go(41)] recv message: type: 101, payload: hi num: -5
+[2023-10-29/20:40:52.924:INFO:client.go(41)] recv message: type: 101, payload: hi num: -6
+[2023-10-29/20:40:53.925:INFO:client.go(41)] recv message: type: 101, payload: hi num: -7
+[2023-10-29/20:40:54.926:INFO:client.go(41)] recv message: type: 101, payload: hi num: -8
+[2023-10-29/20:40:55.927:INFO:client.go(41)] recv message: type: 101, payload: hi num: -9
+[2023-10-29/20:40:56.927:INFO:client.go(41)] recv message: type: 101, payload: hi num: -10
+[2023-10-29/20:40:57.928:INFO:client.go(41)] recv message: type: 101, payload: hi num: -11
+[2023-10-29/20:40:58.929:INFO:client.go(41)] recv message: type: 101, payload: hi num: -12
+[2023-10-29/20:40:59.929:INFO:client.go(41)] recv message: type: 101, payload: hi num: -13
+[2023-10-29/20:41:00.930:INFO:client.go(41)] recv message: type: 101, payload: hi num: -14
+[2023-10-29/20:41:01.931:INFO:client.go(41)] recv message: type: 101, payload: hi num: -15
+[2023-10-29/20:41:02.931:INFO:client.go(41)] recv message: type: 101, payload: hi num: -16
+[2023-10-29/20:41:03.932:INFO:client.go(41)] recv message: type: 101, payload: hi num: -17
+[2023-10-29/20:41:04.933:INFO:client.go(41)] recv message: type: 101, payload: hi num: -18
+[2023-10-29/20:41:05.933:INFO:client.go(41)] recv message: type: 101, payload: hi num: -19
+[2023-10-29/20:41:06.934:INFO:client.go(41)] recv message: type: 101, payload: hi num: -20
+[2023-10-29/20:41:07.935:INFO:client.go(41)] recv message: type: 101, payload: hi num: -21
+[2023-10-29/20:41:08.935:INFO:client.go(41)] recv message: type: 101, payload: hi num: -22
+[2023-10-29/20:41:09.936:INFO:client.go(41)] recv message: type: 101, payload: hi num: -23
+[2023-10-29/20:41:10.937:INFO:client.go(41)] recv message: type: 101, payload: hi num: -24
+[2023-10-29/20:41:11.937:INFO:client.go(41)] recv message: type: 101, payload: hi num: -25
+[2023-10-29/20:41:12.938:INFO:client.go(41)] recv message: type: 101, payload: hi num: -26
+[2023-10-29/20:41:13.939:INFO:client.go(41)] recv message: type: 101, payload: hi num: -27
+[2023-10-29/20:41:14.939:INFO:client.go(41)] recv message: type: 101, payload: hi num: -28
+[2023-10-29/20:41:15.940:INFO:client.go(41)] recv message: type: 101, payload: hi num: -29
+[2023-10-29/20:41:16.940:INFO:client.go(41)] recv message: type: 101, payload: hi num: -30
+[2023-10-29/20:41:17.941:INFO:client.go(41)] recv message: type: 101, payload: hi num: -31
+[2023-10-29/20:41:18.942:INFO:client.go(41)] recv message: type: 101, payload: hi num: -32
+[2023-10-29/20:41:19.943:INFO:client.go(41)] recv message: type: 101, payload: hi num: -33
+[2023-10-29/20:41:20.944:INFO:client.go(41)] recv message: type: 101, payload: hi num: -34
+[2023-10-29/20:41:21.944:INFO:client.go(41)] recv message: type: 101, payload: hi num: -35
+[2023-10-29/20:41:22.945:INFO:client.go(41)] recv message: type: 101, payload: hi num: -36
+[2023-10-29/20:41:23.945:INFO:client.go(41)] recv message: type: 101, payload: hi num: -37
+[2023-10-29/20:41:24.946:INFO:client.go(41)] recv message: type: 101, payload: hi num: -38
+[2023-10-29/20:41:25.947:INFO:client.go(41)] recv message: type: 101, payload: hi num: -39
+[2023-10-29/20:41:26.947:INFO:client.go(41)] recv message: type: 101, payload: hi num: -40
+[2023-10-29/20:41:27.948:INFO:client.go(41)] recv message: type: 101, payload: hi num: -41
+[2023-10-29/20:41:28.949:INFO:client.go(41)] recv message: type: 101, payload: hi num: -42
+[2023-10-29/20:41:29.949:INFO:client.go(41)] recv message: type: 101, payload: hi num: -43
+[2023-10-29/20:41:30.950:INFO:client.go(41)] recv message: type: 101, payload: hi num: -44
+[2023-10-29/20:41:31.950:INFO:client.go(41)] recv message: type: 101, payload: hi num: -45
+[2023-10-29/20:41:32.951:INFO:client.go(41)] recv message: type: 101, payload: hi num: -46
+[2023-10-29/20:41:33.952:INFO:client.go(41)] recv message: type: 101, payload: hi num: -47
+[2023-10-29/20:41:34.952:INFO:client.go(41)] recv message: type: 101, payload: hi num: -48
+[2023-10-29/20:41:35.953:INFO:client.go(41)] recv message: type: 101, payload: hi num: -49
+[2023-10-29/20:41:36.954:INFO:client.go(41)] recv message: type: 101, payload: hi num: -50
+[2023-10-29/20:41:37.954:INFO:client.go(41)] recv message: type: 101, payload: hi num: -51
+[2023-10-29/20:41:38.955:INFO:client.go(41)] recv message: type: 101, payload: hi num: -52
+[2023-10-29/20:41:39.956:INFO:client.go(41)] recv message: type: 101, payload: hi num: -53
+[2023-10-29/20:41:40.956:INFO:client.go(41)] recv message: type: 101, payload: hi num: -54
+[2023-10-29/20:41:41.956:INFO:client.go(41)] recv message: type: 101, payload: hi num: -55
+[2023-10-29/20:41:42.957:INFO:client.go(41)] recv message: type: 101, payload: hi num: -56
+[2023-10-29/20:41:43.958:INFO:client.go(41)] recv message: type: 101, payload: hi num: -57
+[2023-10-29/20:41:44.959:INFO:client.go(41)] recv message: type: 101, payload: hi num: -58
+[2023-10-29/20:41:45.960:INFO:client.go(41)] recv message: type: 101, payload: hi num: -59
+[2023-10-29/20:41:46.960:INFO:client.go(72)] recv reply message: Request num: 0
+[2023-10-29/20:41:47.962:INFO:client.go(72)] recv reply message: Request num: 1
+[2023-10-29/20:41:48.962:INFO:client.go(72)] recv reply message: Request num: 2
+[2023-10-29/20:41:50.000:INFO:client.go(72)] recv reply message: Request num: 3
+[2023-10-29/20:41:51.002:INFO:client.go(72)] recv reply message: Request num: 4
+[2023-10-29/20:41:52.002:INFO:channel.go(89)] quiting sending loop...
+[2023-10-29/20:41:52.002:INFO:channel.go(104)] quiting reading loop...
+[2023-10-29/20:41:52.002:ERROR:client.go(125)] on channel error: read tcp 127.0.0.1:50594->127.0.0.1:50051: use of closed network connection
+[2023-10-29/20:41:52.002:INFO:client.go(45)] err: read tcp 127.0.0.1:50594->127.0.0.1:50051: use of closed network connection
+[2023-10-29/20:41:52.002:INFO:channel.go(56)] quiting message channel...

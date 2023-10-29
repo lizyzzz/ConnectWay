@@ -1,0 +1,72 @@
+[2023-10-29/20:40:43.999:INFO:server.go(65)] Server start, listen in: localhost:50051
+[2023-10-29/20:40:46.921:INFO:server.go(39)] new client connected success, local: 127.0.0.1:50051, remote: 127.0.0.1:50594
+[2023-10-29/20:40:46.921:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 0
+[2023-10-29/20:40:47.921:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 1
+[2023-10-29/20:40:48.922:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 2
+[2023-10-29/20:40:49.922:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 3
+[2023-10-29/20:40:50.923:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 4
+[2023-10-29/20:40:51.924:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 5
+[2023-10-29/20:40:52.924:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 6
+[2023-10-29/20:40:53.925:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 7
+[2023-10-29/20:40:54.926:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 8
+[2023-10-29/20:40:55.926:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 9
+[2023-10-29/20:40:56.927:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 10
+[2023-10-29/20:40:57.928:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 11
+[2023-10-29/20:40:58.928:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 12
+[2023-10-29/20:40:59.929:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 13
+[2023-10-29/20:41:00.930:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 14
+[2023-10-29/20:41:01.930:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 15
+[2023-10-29/20:41:02.931:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 16
+[2023-10-29/20:41:03.932:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 17
+[2023-10-29/20:41:04.932:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 18
+[2023-10-29/20:41:05.933:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 19
+[2023-10-29/20:41:06.934:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 20
+[2023-10-29/20:41:07.934:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 21
+[2023-10-29/20:41:08.935:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 22
+[2023-10-29/20:41:09.936:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 23
+[2023-10-29/20:41:10.936:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 24
+[2023-10-29/20:41:11.937:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 25
+[2023-10-29/20:41:12.938:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 26
+[2023-10-29/20:41:13.938:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 27
+[2023-10-29/20:41:14.939:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 28
+[2023-10-29/20:41:15.940:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 29
+[2023-10-29/20:41:16.940:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 30
+[2023-10-29/20:41:17.941:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 31
+[2023-10-29/20:41:18.942:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 32
+[2023-10-29/20:41:19.943:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 33
+[2023-10-29/20:41:20.943:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 34
+[2023-10-29/20:41:21.944:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 35
+[2023-10-29/20:41:22.944:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 36
+[2023-10-29/20:41:23.945:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 37
+[2023-10-29/20:41:24.946:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 38
+[2023-10-29/20:41:25.946:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 39
+[2023-10-29/20:41:26.947:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 40
+[2023-10-29/20:41:27.948:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 41
+[2023-10-29/20:41:28.948:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 42
+[2023-10-29/20:41:29.949:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 43
+[2023-10-29/20:41:30.950:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 44
+[2023-10-29/20:41:31.950:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 45
+[2023-10-29/20:41:32.951:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 46
+[2023-10-29/20:41:33.951:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 47
+[2023-10-29/20:41:34.952:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 48
+[2023-10-29/20:41:35.953:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 49
+[2023-10-29/20:41:36.953:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 50
+[2023-10-29/20:41:37.954:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 51
+[2023-10-29/20:41:38.955:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 52
+[2023-10-29/20:41:39.955:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 53
+[2023-10-29/20:41:40.956:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 54
+[2023-10-29/20:41:41.956:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 55
+[2023-10-29/20:41:42.957:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 56
+[2023-10-29/20:41:43.958:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 57
+[2023-10-29/20:41:44.959:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 58
+[2023-10-29/20:41:45.959:INFO:server.go(43)] recv msg: type: 85, payload: hello num: 59
+[2023-10-29/20:41:46.960:INFO:server.go(43)] recv msg: type: 290, payload: Request num: 0
+[2023-10-29/20:41:47.961:INFO:server.go(43)] recv msg: type: 290, payload: Request num: 1
+[2023-10-29/20:41:48.962:INFO:server.go(43)] recv msg: type: 290, payload: Request num: 2
+[2023-10-29/20:41:50.000:INFO:server.go(43)] recv msg: type: 290, payload: Request num: 3
+[2023-10-29/20:41:51.001:INFO:server.go(43)] recv msg: type: 290, payload: Request num: 4
+[2023-10-29/20:41:52.002:INFO:channel.go(104)] quiting reading loop...
+[2023-10-29/20:41:52.002:ERROR:server.go(101)] on channel error: EOF
+[2023-10-29/20:41:52.002:ERROR:<autogenerated>(1)] stub err: EOF
+[2023-10-29/20:41:52.002:INFO:channel.go(56)] quiting message channel...
+[2023-10-29/20:41:52.003:INFO:channel.go(89)] quiting sending loop...
