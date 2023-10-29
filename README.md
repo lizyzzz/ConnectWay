@@ -8,4 +8,5 @@
 ```
 
 ## 架构说明
+![image-webbench](https://github.com/lizyzzz/ConnectWay/blob/main/images/ConnectWay.png)
 
